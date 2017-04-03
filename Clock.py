@@ -5,7 +5,7 @@ import calendar
 import time
 window = tkinter.Tk()
 window.title("Clock")
-window.wm_iconbitmap('icon.ico')
+window.wm_iconbitmap('clockicon.ico')
 window.geometry("200x50")
 now = datetime.now()
 yy = now.year
