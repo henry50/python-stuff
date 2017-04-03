@@ -1,7 +1,6 @@
 from tkinter import *
 window = Tk()
 window.title("Number Adder")
-window.wn_iconbitmap('icon.ico
 
 def check():
     ansent.config(state=NORMAL)
