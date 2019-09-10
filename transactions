@@ -1,27 +1,27 @@
-Request URL: https://assess.joincyberdiscovery.com/challenge-files/user_xgHof4h98/get-transactions
+Request URL: https://assess.joincyberdiscovery.com/challenge-files/user_xgHof4h98/get-balances
 Request Method: POST
 Status Code: 200 OK
 Remote Address: 13.35.198.26:443
 Referrer Policy: no-referrer-when-downgrade
 Access-Control-Allow-Origin: *
 Connection: keep-alive
-Content-Encoding: gzip
+Content-Length: 64
 Content-Type: application/json
-Date: Tue, 10 Sep 2019 14:00:55 GMT
+Date: Tue, 10 Sep 2019 14:03:31 GMT
 Server: Apache
-Transfer-Encoding: chunked
-Vary: Accept-Encoding
 Via: 1.1 99ec79865bdc45d813dc1e9b315f3c74.cloudfront.net (CloudFront)
-X-Amz-Cf-Id: N6O_dX5Zhn_cWRrsC5Rt4YZrfsxW2oo9UADyNIr4ajEoiTXaAZkG0g==
+X-Amz-Cf-Id: oti-b4AC19wu9QIekRzGjc-KttcX1YdaJUSOi6iK2ydyT8MPDS-I6g==
 X-Amz-Cf-Pop: LHR62-C1
 X-Cache: Miss from cloudfront
-X-NewRelic-App-Data: PxQGVFZVCQAFR1dbAAMGVlAFFB9AMQYAZBBZDEtZV0ZaClc9HjRBCzgZVAkHD1RWXgMET1FYWwMXbRlGEQMRPUgFcA1eDFwLCzkWBlQVHhYWV1kSBwBMWl8KEkxHWUdESAEYA1JWU1IcUhZSCAgGAR9ICE0TBQBXBgcPV1VbDwQAVFADBRMbAAVdRVY/
+X-NewRelic-App-Data: PxQGVFZVCQAFR1dbAAMGVlAFFB9AMQYAZBBZDEtZV0ZaClc9HjRBCzgZVAkHD1RWXgMET1FYWwMXbRlGEQMRPUgFcA1eDFwLCzkWBlQVHgAFWlYPBQZLHUAMEUAbARlWVAEGA05WTVIAUgpUFBUFHhEEDwUIWFBUUgRTA1ZUXFAERk0EVl1EAzk=
+-Content-Encoding: gzip
+-Transfer-Encoding: chunked
+-Vary: Accept-Encoding
 Accept: */*
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
-Content-Length: 36
-Content-type: application/x-www-form-urlencoded
+Content-Length: 0
 Cookie: _ga=GA1.2.537019744.1568122629; _gid=GA1.2.1917030091.1568122629; cs_assess=3pbmf3hjvrgbjksbag0bb4cvij
 Host: assess.joincyberdiscovery.com
 Origin: https://assess.joincyberdiscovery.com
@@ -30,4 +30,3 @@ Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
 User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
 X-NewRelic-ID: VQMHV1dQDRAGXVZQBgEDUg==
-token: CNcsmXX5ZIcYWAG5cs4t+2yoo7AV
