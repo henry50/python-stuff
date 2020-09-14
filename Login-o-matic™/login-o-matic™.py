@@ -1,7 +1,7 @@
 import tkinter as tk
 import tkinter.messagebox
 from hashlib import sha256
-import sqlite3, os, hashlib, base64
+import sqlite3, os, base64
 class loginSystem(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
@@ -41,7 +41,7 @@ class loginSystem(tk.Tk):
         else:
             if len(newPass) >= 8:
                 salt = base64.b64encode(os.urandom(16)).decode()
-                saltedPass = hashlib.sha256((newPass + salt).encode()).hexdigest()
+                saltedPass = sha256((newPass + salt).encode()).hexdigest()
                 self.dbQuery("INSERT INTO login (username, password, salt) VALUES ('{}','{}','{}')".format(newUser,saltedPass, salt), commit = True)
                 self.nuser.errLab.config(text = "Registered successfully", fg = "green")
                 self.after(1000, self.nuser.destroy)
@@ -79,7 +79,7 @@ class loginSystem(tk.Tk):
             self.linError("Password must be at least 8 characters")
         else:
             salt = base64.b64encode(os.urandom(16)).decode()
-            saltedPass = hashlib.sha256((newPass + salt).encode()).hexdigest()
+            saltedPass = sha256((newPass + salt).encode()).hexdigest()
             self.dbQuery("UPDATE login SET password = '{}', salt = '{}' WHERE id = {}".format(saltedPass, salt, uid), commit = True)#
             self.lin.errLab.config(text = "Password changed successfully!", fg = "green")
             self.lin.newPassEnt.delete(0, "end")
@@ -128,11 +128,3 @@ class loginSystem(tk.Tk):
         self.db.close()
 app = loginSystem()
 app.mainloop()
-
-"""
-user = "shs14166"
-ps = "qwertyuiop"
-salt = base64.b64encode(os.urandom(16)).decode()
-salted_pass = hashlib.sha256((ps + salt).encode()).hexdigest()
-c.execute("INSERT INTO login (username, password, salt) VALUES ('{}','{}','{}')".format(u,salted_pass, salt))
-"""
